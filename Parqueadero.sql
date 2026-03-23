@@ -27,4 +27,5 @@ CREATE TABLE Registro (
     estado VARCHAR(20),
     idVehiculo INT NOT NULL,
     FOREIGN KEY (idVehiculo) REFERENCES Vehiculo(idVehiculo)
+    FOREIGN KEY (idCelda) REFERENCES Celda(idCelda)
 );
