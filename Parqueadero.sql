@@ -14,6 +14,12 @@ CREATE TABLE Vehiculo (
     FOREIGN KEY (idUsuario) REFERENCES Usuario(idUsuario)
 );
 
+CREATE TABLE Celda (
+    idCelda INT PRIMARY KEY AUTO_INCREMET,
+    numero VARCHAR(10) NOT NULL,
+    estado VARCHAR(20) DEFAULT 'Libre'
+    );
+
 CREATE TABLE Registro (
     idRegistro INT PRIMARY KEY AUTO_INCREMENT,
     horaEntrada DATETIME NOT NULL,
