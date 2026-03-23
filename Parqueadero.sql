@@ -1,3 +1,10 @@
+CREATE TABLE Usuario (
+    idUsuario INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
+    documento VARCHAR(20) NOT NULL,
+    telefono VARCHAR(15)
+);
+
 CREATE TABLE Vehiculo (
     idVehiculo INT PRIMARY KEY AUTO_INCREMENT,
     placa VARCHAR(10) NOT NULL,
