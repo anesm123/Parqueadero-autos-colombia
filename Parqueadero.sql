@@ -10,6 +10,8 @@ CREATE TABLE Vehiculo (
     placa VARCHAR(10) NOT NULL,
     tipo VARCHAR(20),
     color VARCHAR(20)
+    idUsuario INT,
+    FOREIGN KEY (idUsuario) REFERENCES Usuario(idUsuario)
 );
 
 CREATE TABLE Registro (
